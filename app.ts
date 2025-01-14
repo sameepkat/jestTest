@@ -17,3 +17,13 @@ export function sum(a: number | string, b: typeof a) {
 export const Calculator = {
 
 };
+
+export function caesarCipher(input: string, shiftFactor: number){}
+
+interface analyzedArray {
+  average: number,
+  min: number,
+  max: number,
+  length: number
+}
+export function analyzeArray(inputArr: Array<number>):analyzedArray {}

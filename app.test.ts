@@ -14,10 +14,6 @@ describe('string operations', () => {
 
 
 describe('Math operations', () => {
-	test('adds 1+2 to equal 3', () => {
-		expect(sum(1, 2)).toBe(3);
-	});
-
 	describe('Calculator Object',() => {
 		test('add', () => {
 			expect(Calculator.sum(5+3)).toBe(8);
@@ -33,4 +29,21 @@ describe('Math operations', () => {
 		})
 	})
 	
+})
+
+test('caesarCipher', () => {
+	expect(caesarCipher('xyz', 3)).toBe('abc');
+	expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
+	expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
+})
+
+test('analyzeArray', () => {
+	const object = analyzeArray([1,8,3,4,2,6]);
+
+	expect(object).toEqual({
+		average: 4,
+		min: 1,
+		max: 8,
+		length: 6
+	})
 })
