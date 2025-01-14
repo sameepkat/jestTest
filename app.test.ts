@@ -1,6 +1,6 @@
 import { describe, expect, test } from "@jest/globals";
 
-import { Calculator, capitalize, reverseString, sum } from "./app";
+import { Calculator, capitalize, reverseString, caesarCipher, analyzeArray } from "./app";
 
 describe('string operations', () => {
 	test('First letter capitalized', () => {
